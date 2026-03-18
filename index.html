@@ -116,7 +116,7 @@
           <div className="absolute left-6 top-1/2 -translate-y-1/2 w-24 h-12 bg-[#FDB813]/30 blur-2xl rounded-full"></div>
           <div className="flex flex-col justify-center ml-1 relative z-10">
             <div className="flex items-center gap-2">
-              <h1 className="text-2xl font-bold tracking-wide flex uppercase text-shimmer-effect drop-shadow-sm">
+              <h1 className="text-l font-bold tracking-wide flex uppercase text-shimmer-effect drop-shadow-sm">
                 แม่หมอคชาท์พัชร
               </h1>
               <button onClick={() => isAdmin ? setIsAdmin(false) : setShowAuthModal(true)} className={`px-2 py-0.5 rounded-full text-[9px] font-medium uppercase tracking-wider border shadow-sm transition-all active:scale-95 ${isAdmin ? 'bg-white/60 text-[#475569] border-[#475569]/30' : 'bg-[#FDB813] text-[#0B1930] border-[#FDB813]'}`}>
@@ -736,7 +736,7 @@
                        </label>
                      </div>
 
-                     <input name="client" required defaultValue={editingTask?.client || ''} className="w-full p-2.5 rounded-xl bg-white border border-[#FDB813]/50 outline-none text-[12px] text-[#0B1930] font-medium shadow-sm focus:border-[#FDB813] transition-all" placeholder="ชื่อลูกค้าคือใคร?" />
+                     <input name="client" required defaultValue={editingTask?.client || ''} className="w-full p-2.5 rounded-xl bg-white border border-[#FDB813]/50 outline-none text-[12px] text-[#0B1930] font-medium shadow-sm focus:border-[#FDB813] transition-all" placeholder="ชื่อลูกค้า" />
                      
                      <div className="flex flex-col gap-2.5">
                         <input list="taskTypesList" name="type" required defaultValue={editingTask?.type || ''} className="w-full p-2.5 rounded-xl font-medium text-[12px] text-[#0B1930] outline-none border border-[#FDB813]/50 shadow-sm focus:border-[#FDB813]" placeholder="ประเภทงาน" />
